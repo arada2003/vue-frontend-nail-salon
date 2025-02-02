@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld />
+    <SampleTable />
+    <addData />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SampleTable from './components/SampleTable.vue';
+import HelloWorld from './components/HelloWorld.vue';
+import addData from './components/addData.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    SampleTable,
+    addData
+  },
+  data() {
+    return {}
+  },
 }
+
 </script>
 
 <style>
@@ -22,7 +31,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgb(35, 70, 230);
+  /* background-color: rgb(249, 252, 255); */
+  /* margin-top: 60px; */
 }
 </style>
